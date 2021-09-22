@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK7</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <table class="calculator">
+        <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="result" /> </td>
+            <td colspan="3"> <input class="display-box" type="text" id="result2" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input class="button" type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input class="button" type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input class="button" type="button" value="Del" onclick="display('Del')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input class="button" type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input class="button" type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input class="button" type="button" value="log" onclick="display('log')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input class="button" type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input class="button" type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input class="button" type="button" value="power" onclick="display('power')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="/" onclick="display('/')" /> </td>
+            <td> <input class="button" type="button" value="0" onclick="display('0')" /> </td>
+            <td> <input class="button" type="button" value="=" onclick="display('=')" /> </td>
+            <td> <input class="button" type="button" value="root" onclick="display('root')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class="button" type="button" value="*" onclick="display('*')" /> </td>
+            <td> <input class="button" type="button" value="-" onclick="display('-')" /> </td>
+            <td> <input class="button" type="button" value="+" onclick="display('+')" /> </td>
+            <td> <input class="button" type="button" value="C" onclick="clearScreen('C')" /> </td>
+        </tr>
+    </table>
+    <!--password generator..........-->
+     <div class="inputBox">
+         <input type="text"name="" placeholder="create password"id="password" readonly="">
+         <div class="btn" onclick="gerpass()">Generate</div>
+     </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
